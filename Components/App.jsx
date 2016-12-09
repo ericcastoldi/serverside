@@ -6,9 +6,10 @@ module.exports = React.createClass({
     return (
       <html>
         <head>
-          <title>Server Side Rendering!</title>
+          <title>{this.props.title}</title>
         </head>
         <body>
+          <h1>{this.props.title}</h1>
           <div id="app">{this.props.children}</div>
           <script src='/application.js' />
         </body>
